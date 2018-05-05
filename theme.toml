@@ -1,15 +1,15 @@
-name = "Startbootstrap Clean Blog"
+name = "Hugo Clean Blog"
 license = "Apache 2.0"
-licenselink = "https://github.com/humboldtux/startbootstrap-clean-blog/blob/master/LICENSE.md"
-description = "Startbootstrap Clean Blog"
-homepage = "https://github.com/humboldtux/startbootstrap-clean-blog"
+licenselink = "https://github.com/go-zen-chu/hugo-clean-blog-theme/blob/master/LICENSE.md"
+description = "Hugo Clean Blog Theme"
+homepage = "https://github.com/go-zen-chu/hugo-clean-blog-theme"
 tags = ["blog", "bootstrap"]
 features = ["blog", "bootstrap"]
 min_version = 0.18
 
 [author]
-  name = "Benoît Benedetti"
-  homepage = "http://www.humboldtux.com"
+  name = "Akira Masuda"
+  homepage = "https://amasuda.xyz"
 
 # original theme
 [original]

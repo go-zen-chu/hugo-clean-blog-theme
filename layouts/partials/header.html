@@ -2,14 +2,12 @@
 <html lang="{{ .Site.LanguageCode }}">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ end }}">
-    <meta name="author" content="{{ if .Params.authors }}{{ .Params.authors }}{{ else if .Site.Params.Author }}{{.Site.Params.Author}}{{ end }}">
+    <meta name="author" content="{{ if .Params.author }}{{ .Params.author }}{{ else if .Site.Params.Author }}{{ .Site.Params.Author }}{{ end }}">
     <meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ end }}">
-
 
     <title>{{ .Title }} -- {{ .Site.Title }}</title>
 
@@ -40,7 +38,7 @@
 
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar on the top -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,7 +51,7 @@
                 </button>
                 <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
             </div>
-
+            <!-- nav content -->
             {{ partial "navbar.html" . }}
         </div>
         <!-- /.container -->
