@@ -4,7 +4,11 @@
     <!-- Set your background image for this header on the line below. -->
     {{ if isset .Params "image" }}
       <header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/{{ .Params.image }}')">
+<<<<<<< HEAD
       {{ else }}
+=======
+    {{ else }}
+>>>>>>> 6a5f62747eb1fb052982078e50b67c354410248b
       <header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/post-bg.jpg')">
     {{ end }}
       <div class="container">
