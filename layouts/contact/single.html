@@ -2,20 +2,33 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/contact-bg.jpg')">
+    <header class="masthead" style="background-image: url('{{ .Site.BaseURL }}img/contact-bg.jpg')">
+      <div class="overlay"></div>
       <div class="container">
         <div class="row">
-           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-             <div class="post-heading">
-               <h1>{{ .Title }}</h1>
-               <h2 class="subheading">{{ .Description }}</h2>
-               <span class="meta">
-                 {{ partial "meta.html" .}}
-               </span>
-             </div>
-           </div>
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>{{ .Title }}</h1>
+              <hr class="small">
+              <span class="subheading">{{ .Description }}</span>
+              <!-- <span class="meta">
+                {{ partial "meta.html" .}}
+              </span> -->
+            </div>
+          </div>
         </div>
       </div>
     </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </article>
 
 {{ partial "footer.html" .}}
