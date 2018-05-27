@@ -1,17 +1,18 @@
 {{ partial "header.html" .}}
-
+    <!-- start body -->
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     {{ if isset .Params "image" }}
-      <header class="intro-header" style="background-image: url('/{{ .Params.image }}')">
-      {{ else }}
-      <header class="intro-header" style="background-image: url('/img/post-bg.jpg')">
+    <header class="masthead" style="background-image: url('/{{ .Params.image }}')">
+    {{ else }}
+    <header class="masthead" style="background-image: url('/img/post-bg.jpg')">
     {{ end }}
+      <div class="overlay"></div>
 
       <div class="container">
         <div class="row">
-           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-             <div class="post-heading">
+           <div class="col-lg-8 col-md-10 mx-auto">
+             <div class="site-heading">
                <h1>{{ .Title }}</h1>
                <h2 class="subheading">{{ .Description }}</h2>
                <span class="meta">
@@ -35,4 +36,5 @@
         </div>
     </article>
 
+    <!-- end body -->
 {{ partial "footer.html" .}}

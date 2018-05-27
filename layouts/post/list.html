@@ -20,8 +20,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          {{ range .Paginator.Pages }}
-              {{ .Render "summary" }}
+          {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+          {{ range $paginator.Pages }}
+          {{ .Render "summary"}}
           {{ end }}
 
           {{ partial "pager.html" . }}
