@@ -11,17 +11,8 @@
   <meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords " , " }}{{ end }}">
 
   <title>{{ .Title }} -- {{ .Site.Title }}</title>
-
-  {{ if .RSSLink }}
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-  {{ end }}
-
-  <!-- {{ .Site.BaseURL }}/ is http://localhost:1313/ in local -->
-
   <!-- Bootstrap Core CSS -->
   <link href="{{ .Site.BaseURL }}/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
   <!-- Custom Fonts -->
   <link href="{{ .Site.BaseURL }}/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
