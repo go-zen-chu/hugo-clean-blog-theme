@@ -1,31 +1,31 @@
 {{ partial "header.html" .}}
 
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="masthead" style="background-image: url('{{ .Site.BaseURL }}img/about-bg.jpg')">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="site-heading">
-              <h1>{{ .Title }}</h1>
-              <hr class="small">
-              <span class="subheading">{{ .Description }}</span>
-            </div>
-          </div>
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="masthead" style="background-image: url('{{ .Site.BaseURL }}/img/about-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>{{ .Title }}</h1>
+          <hr class="small">
+          <span class="subheading">{{ .Description }}</span>
         </div>
       </div>
-    </header>
+    </div>
+  </div>
+</header>
 
-    <!-- Post Content -->
-    <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                  {{ .Content }}
-                </div>
-            </div>
-        </div>
-    </article>
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</article>
 
 {{ partial "footer.html" .}}

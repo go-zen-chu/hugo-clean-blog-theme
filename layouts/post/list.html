@@ -1,33 +1,33 @@
 {{ partial "header.html" . }}
 
-    <!-- Page Header -->
-    <header class="masthead" style="background-image: url('{{ .Site.BaseURL }}img/home-bg.jpg')">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="site-heading">
-              <h1>{{ .Title }}</h1>
-              <hr class="small">
-              <span class="subheading">{{ .Description }}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-          {{ range $paginator.Pages }}
-          {{ .Render "summary"}}
-          {{ end }}
-
-          {{ partial "pager.html" . }}
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('{{ .Site.BaseURL }}/img/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>{{ .Title }}</h1>
+          <hr class="small">
+          <span class="subheading">{{ .Description }}</span>
         </div>
       </div>
     </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+      {{ range $paginator.Pages }}
+      {{ .Render "summary"}}
+      {{ end }}
+
+      {{ partial "pager.html" . }}
+    </div>
+  </div>
+</div>
 
 {{ partial "footer.html" . }}

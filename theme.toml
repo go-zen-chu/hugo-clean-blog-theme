@@ -14,5 +14,5 @@ min_version = 0.17
 # original theme
 [original]
   name = "Startbootstrap Clean Blog"
-  homepage = "http://startbootstrap.com/template-overviews/clean-blog/"
-  repo = "https://github.com/BlackrockDigital/startbootstrap-clean-blog"
+  homepage = "https://startbootstrap.com/previews/clean-blog"
+  repo = "https://github.com/startbootstrap/startbootstrap-clean-blog"
