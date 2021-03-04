@@ -60,9 +60,6 @@
   -o-background-size: cover;
   background-size: cover;
 }
-@mixin serif-font() {
-  font-family: 'Lora', 'Times New Roman', serif;
-}
 @mixin sans-serif-font() {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }

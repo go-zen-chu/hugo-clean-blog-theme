@@ -8,18 +8,24 @@
       color: $primary;
     }
     > .post-title {
+      @media only screen and (max-width: $tablet-max-width) {
+        font-size: 24px;
+      }
       font-size: 30px;
       margin-top: 30px;
       margin-bottom: 10px;
     }
     > .post-subtitle {
-      font-weight: 300;
+      font-weight: $font-weight-light-bold;
       margin: 0 0 10px;
     }
   }
   > .post-meta {
+    @media only screen and (max-width: $tablet-max-width) {
+      font-size: 16px;
+    }
     font-size: 18px;
-    font-style: italic;
+    //font-style: italic;
     margin-top: 0;
     color: $gray-600;
     > a {
@@ -29,13 +35,6 @@
       &:hover {
         text-decoration: underline;
         color: $primary;
-      }
-    }
-  }
-  @media only screen and (min-width: 768px) {
-    > a {
-      > .post-title {
-        font-size: 36px;
       }
     }
   }
