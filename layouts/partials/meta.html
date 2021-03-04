@@ -1,7 +1,7 @@
 {{ if .Site.Params.ShowReadTime }}
-  {{ .ReadingTime }} minute read,
+{{ .ReadingTime }} minute read,
 {{ end }}
-Posted by <a href="#">{{ .Site.Params.Author }}</a> on {{ dateFormat (.Site.Params.DateForm | default "Mon, Jan 2, 2006") .Date }}
+Posted on {{ dateFormat (.Site.Params.DateForm | default "Mon, Jan 2, 2006") .Date }}
 
 <!-- not using categories  -->
 <!-- <br /> -->
