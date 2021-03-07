@@ -7,6 +7,11 @@
 
 ![Sample Page](./docs/hugo-clean-blog-sample.png)
 
+## Goal of this theme
+
+- Simple and clean
+- Good usability and speed (checking with Google lighthouse, search console)
+
 ## Install
 
 In your, hugo project,
