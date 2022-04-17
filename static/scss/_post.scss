@@ -47,18 +47,28 @@ article {
   }
   h1 {
     font-size: $h1-font-size;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
   h2 {
     font-size: $h2-font-size;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
   h3 {
     font-size: $h3-font-size;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
   h4 {
     font-size: $h4-font-size;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
   h5 {
     font-size: $h5-font-size;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
   // only apply for post image. limit img size with max-height
   img.post-img {
