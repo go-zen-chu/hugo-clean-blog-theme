@@ -40,6 +40,6 @@ $h5-font-size: $h4-font-size;
 $font-weight-bold: 700;
 $font-weight-middle-bold: 400;
 $font-weight-light-bold: 200;
-// multi screen size support
-$smart-phone-max-width: 480px;
-$tablet-max-width: 780px;
+// multi screen size support. based on https://getbootstrap.jp/docs/5.0/layout/grid/#grid-options
+$smart-phone-max-width: 576px;
+$tablet-max-width: 960px;
