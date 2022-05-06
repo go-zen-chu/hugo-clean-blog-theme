@@ -1,3 +1,4 @@
+.sass-cache
 ### https://raw.github.com/github/gitignore/ab477818977684f0f6ff370da9508e08944bc8c8/Node.gitignore
 
 # Logs
@@ -69,7 +70,8 @@ typings/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
