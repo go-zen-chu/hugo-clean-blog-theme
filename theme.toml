@@ -1,5 +1,5 @@
 name = "Hugo Clean Blog"
-license = "Apache 2.0"
+license = "MIT"
 licenselink = "https://github.com/go-zen-chu/hugo-clean-blog-theme/blob/master/LICENSE.md"
 description = "Hugo Clean Blog Theme"
 homepage = "https://github.com/go-zen-chu/hugo-clean-blog-theme"

@@ -19,15 +19,17 @@
 <!-- Main Content -->
 <div class="container">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <ul>
-        {{ $data := .Data }}
-        {{ range $key, $value := .Data.Terms.ByCount }}
-        <li><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name | title }}</a> {{ $value.Count }}
-        </li>
-        {{ end }}
-      </ul>
+    {{ $data := .Data }}
+    {{ range $key, $value := .Data.Terms.ByCount }}
+    <div class="col-xs-12 col-md-3">
+      <a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}" class="btn text-nowrap" role="button">
+        {{$value.Name | lower }}
+        <span class="badge bg-secondary text-white">
+          {{ $value.Count }}
+        </span>
+      </a>
     </div>
+    {{ end }}
   </div>
 </div>
 

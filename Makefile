@@ -1,25 +1,16 @@
 CURDIR := $(shell pwd)
 $(info "Start make at $(CURDIR)")
 
-.PHONY: all
-all: cp-js cp-css cp-scss cp-font cp-img
+.PHONY: track-version
+track-version:
+	pushd startbootstrap-clean-blog; \
+	git pull origin master --tags; \
+	# Update tag version if original theme (https://github.com/StartBootstrap/startbootstrap-clean-blog) updated \
+	git checkout refs/tags/v6.0.8; \
+	popd
 
-cp-js:
-	cp -a startbootstrap-clean-blog/js static/
-	cp -a startbootstrap-clean-blog/vendor/bootstrap/js/* static/js
-	cp -a startbootstrap-clean-blog/vendor/jquery/* static/js
+.PHONY: cp-src
+cp-src:
+	rm -rf src
+	cp -R startbootstrap-clean-blog/src	src
 
-cp-css:
-	cp -a startbootstrap-clean-blog/css static/
-	cp -a startbootstrap-clean-blog/vendor/bootstrap/css/* static/css
-	cp -a startbootstrap-clean-blog/vendor/fontawesome-free/css/* static/css
-
-cp-scss:
-	cp -a startbootstrap-clean-blog/scss static/
-	# don't need bootstrap, font-awesome scss (we don't edit these but override)
-
-cp-font:
-	cp -a startbootstrap-clean-blog/vendor/fontawesome-free/webfonts static/
-
-cp-img:
-	cp -a startbootstrap-clean-blog/img static/
