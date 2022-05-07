@@ -1,9 +1,9 @@
           <!-- Pager -->
-          <div class="pager clearfix">
+          <div>
             {{ if .Paginator.HasPrev }}
-            <a class="previous btn btn-primary float-left" href="{{.Paginator.Prev.URL}}">&larr; NEWER POSTS</a>
+            <a class="previous btn btn-primary float-start text-uppercase" href="{{.Paginator.Prev.URL}}">&larr; Newer Posts</a>
             {{ end }}
             {{ if .Paginator.HasNext }}
-            <a class="next btn btn-primary float-right" href="{{.Paginator.Next.URL}}">OLDER POSTS &rarr;</a>
+            <a class="next btn btn-primary float-end text-uppercase" href="{{.Paginator.Next.URL}}">Older Posts &rarr;</a>
             {{ end }}
           </div>
