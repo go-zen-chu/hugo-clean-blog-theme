@@ -6,9 +6,7 @@
 
 ![Sample Page](./docs/hugo-clean-blog-sample.png)
 
-Hugo theme based on [Start Bootstrap Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/). Please also see [Start Bootstrap - Clean Blog](https://startbootstrap.com/theme/clean-blog/).
-
-Hugo theme originally forked from [humboldtux/startbootstrap-clean-blog: Hugo theme based on Start Bootstrap Clean blog](https://github.com/humboldtux/startbootstrap-clean-blog) and updated to latest bootstrap.
+Hugo theme based on [Start Bootstrap Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/). Please also see [Start Bootstrap - Clean Blog](https://github.com/startbootstrap/startbootstrap-clean-blog).
 
 ## Goal of this theme
 
@@ -31,6 +29,20 @@ theme = "clean-blog"
 ```
 
 ## How to develop this theme
+
+### Update to latest clean-blog style
+
+```bash
+vim Makefile
+# update to latest tag
+make track-version
+```
+
+### Copy css, js and other assets from original theme
+
+```bash
+make cp-all
+```
 
 This theme uses [Start Bootstrap Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/), so we need to bring all static things to this theme.
 

@@ -9,8 +9,9 @@ track-version:
 	git checkout refs/tags/v6.0.8; \
 	popd
 
-.PHONY: cp-src
-cp-src:
-	rm -rf src
-	cp -R startbootstrap-clean-blog/src	src
-
+.PHONY: cp-all
+cp-all:
+	cp startbootstrap-clean-blog/dist/css/* static/css/; \
+	cp startbootstrap-clean-blog/dist/js/* static/js/; \
+	cp startbootstrap-clean-blog/assets/img/* static/img/; \
+	cp startbootstrap-clean-blog/assets/favicon.ico static/
