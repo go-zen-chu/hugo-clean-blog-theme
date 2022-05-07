@@ -40,14 +40,8 @@ make track-version
 
 ### Copy css, js and other assets from original theme
 
+This theme uses [Start Bootstrap Clean Blog](https://github.com/startbootstrap/startbootstrap-clean-blog), so we need to bring all static things to this theme.
+
 ```bash
 make cp-all
-```
-
-This theme uses [Start Bootstrap Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/), so we need to bring all static things to this theme.
-
-You can do that by using Makefile.
-
-```bash
-make all
 ```
