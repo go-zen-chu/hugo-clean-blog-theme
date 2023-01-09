@@ -3,14 +3,12 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ end }}">
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ end }}" />
     <meta name="author"
-        content="{{ if .Params.author }}{{ .Params.author }}{{ else if .Site.Params.Author }}{{ .Site.Params.Author }}{{ end }}">
+        content="{{ if .Params.author }}{{ .Params.author }}{{ else if .Site.Params.Author }}{{ .Site.Params.Author }}{{ end }}" />
     <meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords " , " }}{{ end }}">
-
-    <title>{{ .Title }} -- {{ .Site.Title }}</title>
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>

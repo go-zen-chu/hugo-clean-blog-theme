@@ -11,7 +11,7 @@ track-version:
 
 .PHONY: cp-all
 cp-all:
-	cp startbootstrap-clean-blog/dist/css/* static/css/; \
-	cp startbootstrap-clean-blog/dist/js/* static/js/; \
-	cp startbootstrap-clean-blog/assets/img/* static/img/; \
-	cp startbootstrap-clean-blog/assets/favicon.ico static/
+	cp ./startbootstrap-clean-blog/dist/css/* static/css/; \
+	cp ./startbootstrap-clean-blog/dist/js/* static/js/; \
+	cp ./startbootstrap-clean-blog/dist/assets/img/* static/img/; \
+	cp ./startbootstrap-clean-blog/dist/assets/favicon.ico static/
